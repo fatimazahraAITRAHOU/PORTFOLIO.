@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    color: #82401D;
+}
+html{
+  scroll-behavior: smooth;
+}
+ body{
+    background-color: #E6CAB3; 
+ }
+.dropdown img{
+   width: 30px;
+}
+.logo{
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 20px;
+}
+header nav ul ,li{
+    display: flex;
+    gap: 15px;
+}
+  #mobile{
+    display: none;
+    align-items: center;
+}
+#close{
+    display: none;
+}
+#bar{
+    display: none;
+}
+  .display{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  }
+ /* landing */
+ .landing{
+  font-size: 40px;
+  font-weight: bold;
+ margin: 60px 0;
+ }
+ .landing p span{
+     color: #14252C ;
+     font-size: 60px;
+ }
+ .landing .img{
+  filter: drop-shadow(1px 1px 20px #14252C);
+ }
+ button{
+  padding: 15px;
+  width: 25%;
+  border: none;
+  outline: none;
+  background-color: #14252C;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 6px;
+ }
+ /* About */
+ .About{
+  background-color: #45575B;
+  padding: 10px;
+ }
+ .About p ,h1{
+  color: #E6CAB3;
+  width: 500px;
+ font-size: 25px;
+ letter-spacing: 2px;
+ }
+ .About h1{
+  font-size: 45px; 
+ } 
+.title{
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  margin: 35px 0;
+}
+ /* /skills */
+ .skills{
+  background-color: #273C41;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 10px;
+ }
+ .images{  
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  text-align: center;
+ }
+ .skills .img1 img{
+  background-color: #fff;
+  width: 70px;
+  border: #E6CAB3 solid 2px;
+  border-radius: 50%;
+  padding: 10px;
+ }
+ .skills_images{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+ }
+ .skills_images h4{
+  color: #fff;
+  margin-bottom: 7px;
+  font-size: 20px;
+ }
+ /* My Project */
+ .cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+ }
+ .card{
+  margin: 20px auto;
+  text-align: center;
+  /* background-color: #fff; */
+  border-radius: 10px;
+ }
+ .card img{
+  width: 350px;
+  border-radius: 10px;
+ }
+ .card ,h4 ,p{
+  margin-top: 15px;
+ }
+ .card button{
+  margin: 10px 0 10px 0;
+  width: 40%;
+ }
+ .card button a{
+  color: white;
+ }
+ /* contact */
+ .contact .card{
+  width: 150px;
+ }
+ .contact .card i{
+  font-size: 40px;
+  margin-top: 20px;
+  
+ }
+ .contact .card h4{
+  margin: 15px 0;
+ }
+.send_email{
+  background-color: #fff;
+  width: 400px;
+  padding: 10px;
+}
+form input{
+  width: 100%;
+  padding: 6px;
+}
+form h2{
+  text-align: center;
+  margin: 25px 0;
+}
+form .btn{
+   background-color: #E6CAB3;
+   border: none;
+   padding: 8px;
+   font-weight: bold;
+   font-size: 20px;
+   width: 100%;
+   letter-spacing: 2px;
+}
+footer{
+  text-align: center;
+  background-color: #82401D;
+}
+footer p{
+  color: white;
+  font-size: 15px;
+ padding: 30px;
+}
+footer .icon i{
+  background-color: #fff;
+  font-size: 25px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+@media(max-width:800px){
+  .navbar-wrapper{
+    position: relative;
+  }
+  #navbar{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position: fixed;
+      top: 0;
+      right: -300px;
+      height: 100vh;
+      width: 300px;
+      background-color: #fff;
+      box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+      padding: 80px 0 0 10px;
+      transition: 0.3s;
+  }
+  #navbar li{
+      margin-bottom: 25px;
+  }
+  #mobile{
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+  }
+  #mobile a{
+      color: #1a1a1a;
+      font-size: 24px;
+      padding-left: 20px;
+      margin-top: 7px;
+  }
+  #navbar.active{
+      right: 0px; 
+      z-index: 10;
+  }
+  #close {
+    display: none; 
+    position: absolute;
+    top: 0; 
+    left: 30px;
+    z-index: 111;
+  }
+  #lg-bag{
+      display: none;
+  }
+  #bar {
+    display: block; 
+  }
+  .landing{
+    text-align: center;
+  }
+  .About p ,h1{
+    width: 250px;
+   font-size: 20px;
+   letter-spacing: 2px;
+   }
+   .skills .img1 img{
+    width: 50px;
+   }
+   .send_email{
+    width: 300px;
+  }
+  form textarea{
+    width: 280px;
+  }
+  }
+  @media(max-width:300px){
+  .container{
+       width: 550px;
+    }
+    /* .About p ,h1{
+      
+      width: 200px;
+     font-size: 10px;
+     letter-spacing: 2px;
+     } */
+  }
+ 
